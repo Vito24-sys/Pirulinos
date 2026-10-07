@@ -1,0 +1,22 @@
+appId: com.electron.lanchat
+productName: Pirolinos
+directories:
+  buildResources: build
+  output: dist
+files:
+  - '!**/.vscode/*'
+  - '!src/*'
+  - '!electron.vite.config.{js,ts,mjs,cjs}'
+
+publish:
+  provider: github
+  owner: Vito    # Pon tu usuario de GitHub (o déjalo mientras compilas)
+  repo: https://github.com/Vito24-sys/Pirulinos.git # Pon el nombre del repo
+
+win:
+  executableName: Pirolinos
+  icon: build/icon.ico
+
+nsis:
+  oneClick: false
+  allowElevation: true
